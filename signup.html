@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        section {
+            height: 100vh;
+            background: #000;
+        }
+
+        video {
+            object-fit: cover;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 10%;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: center;
+            color: #ddd;
+            font-size: 5em;
+            font-family: sans-serif;
+            letter-spacing: .3em;
+        }
+
+        h1 span {
+            opacity: 0;
+            display: inline-block;
+            animation: animate 1s linear forwards;
+            -webkit-animation: animate 1s linear forwards;
+        }
+
+        @keyframes animate {
+            0% {
+                opacity: 0;
+                transform: rotateY(90deg);
+                filter: blur(10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: rotateY(0deg);
+                filter: blur(0px);
+            }
+        }
+
+        h1 span:nth-child(1) {
+            animation-delay: 1s;
+        }
+
+        h1 span:nth-child(2) {
+            animation-delay: 2s;
+        }
+
+        h1 span:nth-child(3) {
+            animation-delay: 3s;
+        }
+
+        h1 span:nth-child(4) {
+            animation-delay: 3.5s;
+        }
+
+        h1 span:nth-child(5) {
+            animation-delay: 4s;
+        }
+
+        h1 span:nth-child(6) {
+            animation-delay: 4.5s;
+        }
+
+        h1 span:nth-child(7) {
+            animation-delay: 5s;
+        }
+
+        h1 span:nth-child(8) {
+            animation-delay: 5.5s;
+        }
+
+        h1 span:nth-child(9) {
+            animation-delay: 6s;
+        }
+
+        h1 span:nth-child(6) {
+            animation-delay: 6.5s;
+        }
+
+        .h1 span {
+            opacity: 0;
+            display: inline-block;
+            animation: animate 1s linear forwards;
+            -webkit-animation: animate 1s linear forwards;
+        }
+
+        .form {
+            text-align: center left;
+            font-size: 200px;
+            margin: 20%;
+            padding: 10px;
+            top: 50%;
+            font-size: 10px;
+
+
+        }
+
+        .sign {
+            width: 100px;
+            background: rgb(239, 234, 234);
+            border: 2px solid black;
+            text-align: center;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .nam {
+            color: white;
+        }
+        .box{
+            text-align: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+        .login{
+            width: 200px;
+            background: rgb(239, 234, 234);
+            border: 2px solid black;
+            text-align: center;
+            margin: auto;
+            padding: 10px;  
+            top: 20px;   
+        }
+        .website{
+            width: 200px;
+            background: rgb(239, 234, 234);
+            border: 2px solid black;
+            text-align: center;
+            margin: auto;
+            padding: 5px;  
+            top: 10px; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <form class="nam">
+            <div>
+                <section>
+                    <video src="smoke.mp4" width="100%" height="200px" autoplay muted loop></video>
+                    <h1>
+                        <span>S</span>
+                        <span>I</span>
+                        <span>G</span>
+                        <span>N</span>
+                        <span>U</span>
+                        <span>P</span>
+                        <span>F</span>
+                        <span>O</span>
+                        <span>R</span>
+                        <span>M</span>
+                    </h1>
+               
+                    <br />
+                    <br />
+                    <form>
+                        <div class="box">
+                        Name:
+                        <input type=" textbox" name="name" placeholder="Name" required />
+                        <br />
+                        <br />
+                        Father name:
+                        <input type="textbox" name="Fname" placeholder="Father name" required />
+                        <br />
+                        <br />
+                        Mother name:
+                        <input type="textbox" name="Mname" placeholder="Mother name" required/>
+                        <br />
+                        <br />
+                        Gernder:
+                        <input type="radio" name="Gernder" />Male
+                        <input type="radio" name="Gernder" />Female
+                        <input type="radio" name="Gernder" />Other                      
+                        <br />
+                        <br />
+                        Phone number:
+                        <input type="textbox" name="phone number" placeholder="Phone number" required/>
+                        <br />
+                        <br />
+                        E-mail:
+                        <input type="email" name="Emali" placeholder="E-mail" required />
+                        <br />
+                        <br />                  
+                        Address:
+                        <textarea name="Address" placeholder="Address" rows="1"required></textarea>                   
+                        <br />
+                        <br />
+                        Date of birth:
+                        <input type="date" name="DOB" required/>
+                        <br />
+                        <br />
+                        <input type="submit" name="submit"/>
+                        <input type="reset" name="reset" />
+                        <div class="login">
+                            <a href="login.html">have already account? LOGIN</a>
+                        </div>
+                        <div class="website">
+                            <a href="book.html">Back to home page!</a>
+                        </div>
+                    </div>
+
+                    </form>
+                </section>
+            </div>
+            <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        section{
+            height: 100vh;
+            background: #000;
+        }
+        video{
+            object-fit: cover;
+        }
+        h1{
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 10%;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: center;
+            color: #ddd;
+            font-size: 5em;
+            font-family: sans-serif;
+            letter-spacing: .3em;
+        }
+        h1 span{
+            opacity: 0;
+            display: inline-block;
+            animation: animate 1s linear forwards;
+            -webkit-animation: animate 1s linear forwards;
+        }
+        @keyframes animate{
+            0%{
+                opacity: 0;
+                transform: rotateY(90deg);
+                filter: blur(10px);
+            }
+            100%{
+                opacity: 1;
+                transform: rotateY(0deg);
+                filter: blur(0px);
+            }
+        }
+        h1 span:nth-child(1)
+        {
+            animation-delay: 1s;
+        }
+        h1 span:nth-child(2)
+        {
+            animation-delay: 2s;
+        }
+        h1 span:nth-child(3)
+        {
+            animation-delay: 3s;
+        }
+        h1 span:nth-child(4)
+        {
+            animation-delay: 3.5s;
+        }
+        h1 span:nth-child(5)
+        {
+            animation-delay: 4s;
+        }
+        h1 span:nth-child(6)
+        {
+            animation-delay: 4.5s;
+        }
+        h1 span:nth-child(7)
+        {
+            animation-delay: 5s;
+        }
+        h1 span:nth-child(8)
+        {
+            animation-delay: 5.5s;
+        }
+        h1 span:nth-child(9)
+        {
+            animation-delay: 6s;
+        }
+        h1 span:nth-child(6)
+        {
+            animation-delay: 6.5s;
+        }
+        .h1 span{
+            opacity: 0;
+            display: inline-block;
+            animation: animate 1s linear forwards;
+            -webkit-animation: animate 1s linear forwards;
+        }
+        .form {
+            text-align: center;
+            font-size: 50px;
+            margin: 20%;
+            padding: 10px;
+            text-align: center;
+            top: 50%;
+
+        }
+
+        .sign {
+            width: 200px;
+            background: rgb(239, 234, 234);
+            border: 2px solid black;
+            text-align: center;
+            margin: auto;
+            padding: 10px;  
+            top: 20px;   
+        }
+        .page{
+            color: white;
+        }
+        .sign{
+            color: white;
+        }
+        .website{
+            width: 200px;
+            background: rgb(239, 234, 234);
+            border: 2px solid black;
+            text-align: center;
+            margin: auto;
+            padding: 5px;  
+            top: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <video src="smoke.mp4" width="100%" height="200px" autoplay muted loop></video>
+        <h1>
+            <span>L</span>
+            <span>O</span>
+            <span>G</span>
+            <span>I</span>
+            <span>N</span>
+            <span>F</span>
+            <span>O</span>
+            <span>R</span>
+            <span>M</span>
+        </h1>
+<br/>
+<br/>
+        <form>
+            <div class="page">
+                USERNAME:
+                <input type="text" name="" placeholder="username" required>
+            </div>
+            <br />
+            <br />
+            <div class="page">
+                PASSWORD:
+                <input type="password" name="" placeholder="password" required>
+            </div>
+            <br />
+            <br />
+            <div class="page">
+                <input type="submit" value="login" onclick="alert('Login sucessfully')">
+                
+        </div>
+        </form>
+        <br/>
+
+        <div class="sign">
+            <a href="signup.html">New account? sign up</a>
+        </div>
+        <div class="website">
+            <a href="book.html">Back to home page!</a>
+        </div>
+    </section>
+    <br/>
+    
+</body>
+</html>
